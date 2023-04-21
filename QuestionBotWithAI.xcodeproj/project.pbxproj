@@ -13,6 +13,7 @@
 		DC02397E29F305CB00CD1334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC02397C29F305CB00CD1334 /* Main.storyboard */; };
 		DC02398029F305CD00CD1334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC02397F29F305CD00CD1334 /* Assets.xcassets */; };
 		DC02398329F305CD00CD1334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC02398129F305CD00CD1334 /* LaunchScreen.storyboard */; };
+		DC02398C29F308A200CD1334 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC02398B29F308A200CD1334 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC02398C29F308A200CD1334 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = QuestionBotWithAI;
+			packageProductDependencies = (
+				DC02398B29F308A200CD1334 /* Alamofire */,
+			);
 			productName = QuestionBotWithAI;
 			productReference = DC02397329F305CB00CD1334 /* QuestionBotWithAI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DC02396A29F305CB00CD1334;
+			packageReferences = (
+				DC02398A29F308A200CD1334 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DC02397429F305CB00CD1334 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC02398A29F308A200CD1334 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC02398B29F308A200CD1334 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC02398A29F308A200CD1334 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC02396B29F305CB00CD1334 /* Project object */;
 }
